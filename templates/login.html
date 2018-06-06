@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" href="/static/css/style.css">
+	
+</head>
+<body>
+		<form class="" method="post">
+			<input type="text" name="email" placeholder="Email">
+			<input type="password" name="password" placeholder="Password">
+			<button type="submit" name="login_submit">Sign in</button>
+		</form>
+		{% if error %}
+			{{ error }}
+		{% endif %}
+
+</body>
+</html>

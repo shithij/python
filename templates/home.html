@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+	NIE is awesome. I hope my principal reads this.
+<ul>	
+	{%set x= 'abcdefghijklmnopqrstuvwxyz'%}
+	{% for i in x %}
+			{% print(i) %}
+	{% endfor %}
+</ul>
+<ul>
+	{% for i in fruit %}
+		<li>
+			{{i}}
+		</li>
+	{% endfor %}
+</ul>
+<a href="/login"><button type="submit" name="logout_submit">Sign out</button></a>
+
+</body>
+</html>
